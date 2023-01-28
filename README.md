@@ -52,4 +52,4 @@ NVIM v0.8.0
 Plugin configuration files are placed in the `after/plugin` directory as they
 are sourced last according to `:h rtp`
 
-For all the plugins, see: `lua/guava/packer.lua`
+For all the plugins, see: [lua/guava/packer.lua](https://github.com/lazeroffmichael/nvim/blob/main/lua/guava/packer.lua)
