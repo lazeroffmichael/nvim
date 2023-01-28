@@ -53,3 +53,9 @@ Plugin configuration files are placed in the `after/plugin` directory as they
 are sourced last according to `:h rtp`
 
 For all the plugins, see: [lua/guava/packer.lua](https://github.com/lazeroffmichael/nvim/blob/main/lua/guava/packer.lua)
+
+### Credit
+Probably still couldn't quit vim if it wasn't for:
+- [ThePrimeagen](https://github.com/ThePrimeagen)
+- [chris@machine](https://github.com/ChristianChiarulli)
+- [TJ Devries](https://github.com/tjdevries)
