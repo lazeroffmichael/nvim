@@ -1,3 +1,11 @@
 local git = require("gitsigns")
 
-git.setup({})
+git.setup({
+    signs = {
+        add = { text = "+" },
+        change = { text = "~" },
+        delete = { text = "_" },
+        topdelete = { text = "‾" },
+        changedelete = { text = "~" },
+    },
+})
