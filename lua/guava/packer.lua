@@ -21,7 +21,7 @@ return packer.startup(function(use)
     })
 
     -- Colorscheme
-    use({ "navarasu/onedark.nvim"})
+    use({ "navarasu/onedark.nvim" })
 
     -- Treesitter: Advanced Syntax Highlighting
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
@@ -100,4 +100,10 @@ return packer.startup(function(use)
 
     -- Web Dev Icons: Good Icons (Mostly for dap ui)
     use({ "nvim-tree/nvim-web-devicons" })
+
+    -- nvim-tree: File Explorer
+    use({
+        "nvim-tree/nvim-tree.lua",
+        tag = "nightly", -- optional, updated every week. (see issue #1193)
+    })
 end)
