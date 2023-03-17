@@ -4,11 +4,13 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
     -- language servers
-    "lua_ls",
-    "pyright",
-    "clangd",
-    "jdtls",
-    "gopls"
+    "lua_ls", -- lua
+    "pyright", -- python
+    "clangd", -- C/C++
+    "jdtls", -- Java
+    "gopls", -- Go
+    "docker_compose_language_service", -- Docker Compose
+    "dockerls" -- Docker
 })
 
 -- Fix Undefined global 'vim'
