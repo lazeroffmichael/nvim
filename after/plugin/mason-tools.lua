@@ -4,10 +4,11 @@ local servers = {
     -- DAP Adapters
     -- Linters
     "flake8",
+    "golangci-lint",
     -- Formatters
     "stylua",
     "black",
-    "clang-format"
+    "clang-format",
 }
 
 masontools.setup({
