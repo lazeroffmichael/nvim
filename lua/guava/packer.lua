@@ -106,4 +106,9 @@ return packer.startup(function(use)
         "nvim-tree/nvim-tree.lua",
         tag = "nightly", -- optional, updated every week. (see issue #1193)
     })
+
+    -- Git integration
+    use({
+        "tpope/vim-fugitive",
+    })
 end)
