@@ -23,8 +23,8 @@ NVIM v0.8.0
 |  Python      | ✅  | ✅  |
 |   C++        | ✅  | ❌  |
 |   Java       | ❌  | ❌  |
-|    Go        | ❌  | ❌  |
-|   Lua        | ❌  | ❌  |
+|    Go        | ✅  | ❌  |
+|   Lua        | ✅  | ❌  | 
 | JavaScript   | ❌  | ❌  |
 | TypeScript   | ❌  | ❌  |
 |   Rust       | ❌  | ❌  |
