@@ -4,7 +4,6 @@ local servers = {
     -- DAP Adapters
     -- Linters
     "flake8",
-    "golangci-lint",
     -- Formatters
     "stylua",
     "black",
