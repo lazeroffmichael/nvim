@@ -23,3 +23,15 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yank To System Clip
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Delete To Void Register", silent = true })
 vim.keymap.set("n", "Q", "<nop>", { desc = "Don't Use Q" })
 vim.keymap.set("n", "<leader>rp", "<cmd>!python3 %<CR>", { desc = "Run Python File", silent = true })
+
+-- Resize window using <ctrl> arrow keys
+vim.keymap.set("n", "<C-Up>", "<nop>")
+vim.keymap.set("n", "<C-Down>", "<nop>")
+vim.keymap.set("n", "<C-Left>", "<nop>")
+vim.keymap.set("n", "<C-Right>", "<nop>")
+
+-- Vertical and horizontal do not map the initial way you think they do
+vim.keymap.set("n", "<leader>wj", "<cmd>resize +2<cr>", { desc = "Increase window height" })
+vim.keymap.set("n", "<leader>wk", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
+vim.keymap.set("n", "<leader>wl", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
+vim.keymap.set("n", "<leader>wh", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
