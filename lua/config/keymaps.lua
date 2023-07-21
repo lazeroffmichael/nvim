@@ -24,11 +24,15 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Delete To Void Regi
 vim.keymap.set("n", "Q", "<nop>", { desc = "Don't Use Q" })
 vim.keymap.set("n", "<leader>rp", "<cmd>!python3 %<CR>", { desc = "Run Python File", silent = true })
 
--- Resize window using <ctrl> arrow keys
-vim.keymap.set("n", "<C-Up>", "<nop>")
-vim.keymap.set("n", "<C-Down>", "<nop>")
-vim.keymap.set("n", "<C-Left>", "<nop>")
-vim.keymap.set("n", "<C-Right>", "<nop>")
+-- tmux navigation
+vim.keymap.del("n", "<C-h>")
+vim.keymap.del("n", "<C-j>")
+vim.keymap.del("n", "<C-k>")
+vim.keymap.del("n", "<C-l>")
+vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Window Left" })
+vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "Window Right" })
+vim.keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "Window Up" })
+vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Window Right" })
 
 -- Vertical and horizontal do not map the initial way you think they do
 vim.keymap.set("n", "<leader>wj", "<cmd>resize +2<cr>", { desc = "Increase window height" })
