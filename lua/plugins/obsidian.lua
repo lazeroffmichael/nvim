@@ -35,9 +35,14 @@ return {
         -- Disable by default gf passthrough - it complains
         -- Instead bind with keybinding
         mappings = {},
+        -- By default an id is appended - just make it the title passed
+        note_id_func = function(title)
+            return title
+        end,
     },
     keys = {
+        { "<leader>oo", "<cmd>ObsidianOpen<CR>", desc = "Obsidian: Open In Obsidian" },
         { "<leader>os", "<cmd>ObsidianQuickSwitch<CR>", desc = "Obsidian: Search Files" },
-        { "<leader>on", "<cmd>ObsidianNew<CR>", desc = "Obsidian: New File" },
+        { "<leader>og", "<cmd>ObsidianSearch<CR> ", desc = "Obsidian: Grep" },
     },
 }
