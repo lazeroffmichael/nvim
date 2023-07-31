@@ -16,4 +16,5 @@ return {
     keys = {
         { "<leader>mp", "<cmd>MarkdownPreviewToggle<cr>", desc = "Markdown Preview" },
     },
+    lazy = true,
 }
