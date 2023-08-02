@@ -30,7 +30,7 @@ return {
         "nvim-lua/plenary.nvim",
     },
     opts = {
-        dir = "~/Notes", -- no need to call 'vim.fn.expand' here
+        dir = "~/ObsidianNotes", -- no need to call 'vim.fn.expand' here
         notes_subdir = "Notes",
         -- Disable by default gf passthrough - it complains
         -- Instead bind with keybinding
@@ -42,7 +42,8 @@ return {
     },
     keys = {
         { "<leader>oo", "<cmd>ObsidianOpen<CR>", desc = "Obsidian: Open In Obsidian" },
-        { "<leader>os", "<cmd>ObsidianQuickSwitch<CR>", desc = "Obsidian: Search Files" },
-        { "<leader>og", "<cmd>ObsidianSearch<CR> ", desc = "Obsidian: Grep" },
+        { "<leader>of", "<cmd>ObsidianQuickSwitch<CR>", desc = "Obsidian: Search Files" },
+        { "<leader>os", "<cmd>ObsidianSearch<CR> ", desc = "Obsidian: Grep" },
+        { "<leader>ob", "<cmd>ObsidianBacklinks<CR> ", desc = "Obsidian: Open Backlinks" },
     },
 }
