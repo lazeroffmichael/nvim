@@ -1,18 +1,26 @@
 return {
-    {
-        "rose-pine/neovim",
-        name = "rose-pine",
-        opts = {
-            --- @usage 'main'|'moon'|'dawn'|'auto'
-            variant = "moon",
-            dim_nc_background = true,
-            disable_background = false,
-        },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      --- @usage 'main'|'moon'|'dawn'|'auto'
+      variant = "moon",
+      dim_nc_background = false,
+      disable_background = false,
     },
-    {
-        "LazyVim/LazyVim",
-        opts = {
-            colorscheme = "rose-pine",
-        },
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    opts = {
+      transparent_background = false,
+      flavour = "frappe",
     },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "tokyonight",
+    },
+  },
 }
